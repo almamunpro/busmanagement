@@ -116,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                   height:
                       32.0), // Increased margin between app name and welcome
               const Text(
-                'Travel',
+                'e-Travel',
                 style: TextStyle(
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,

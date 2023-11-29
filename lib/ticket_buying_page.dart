@@ -8,13 +8,100 @@ class TicketBuyingPage extends StatelessWidget {
         title: Text('Ticket Buying'),
       ),
       body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            // Add logic for ticket purchase
-            // After successful purchase, you can navigate to a confirmation page
-          },
-          child: Text('Purchase Ticket'),
-        ),
+        child: Container(
+            child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 150, 20, 0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 100,
+                    height: 20,
+                    child: Text(
+                      'Location 1',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    width: 40,
+                    height: 20,
+                    child: Text(
+                      '<->',
+                      style:
+                          TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Container(
+                    width: 100,
+                    height: 20,
+                    child: Text(
+                      'Location 2',
+                      style:
+                          TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              width: 400,
+              height: 200,
+              color: Colors.orange,
+              child: Center(
+                child: Text(
+                  'Additional Container 2',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 50,
+            ),
+            Container(
+              width: 400,
+              height: 200,
+              color: Colors.orange,
+              child: Center(
+                child: Text(
+                  'Additional Container 2',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        )),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
       ),
     );
   }
